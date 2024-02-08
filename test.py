@@ -19,3 +19,4 @@ for row in rows:
     # column1_value = row['column1_name']
     # column2_value = row['column2_name']
     print(column1_value, column2_value)
+    # Comment by The Me
