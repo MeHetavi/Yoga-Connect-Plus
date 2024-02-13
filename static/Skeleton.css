@@ -1,23 +1,12 @@
- .navbar ul li a {
-     color: #E0E4CC;
-     font-size: 25px;
+.navbar {
+    background-color: #0D1B2A;
+    height: 150px;
+    width: 90%;
+    border-radius: 300px;
+    align-self: center;
+}
 
- }
-
- .navbar {
-     background-color: #0D1B2A;
-     height: 150px;
-     position: fixed;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     width: 100%;
-     z-index: 50;
- }
-
- #block {
-     background-color: F7FFF7;
-     color: E0E4CC;
-     font-size: 25px;
- }
+.nav-item a {
+    color: #E0E4CC;
+    font-size: 25px;
+}
