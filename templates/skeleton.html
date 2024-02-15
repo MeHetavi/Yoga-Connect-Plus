@@ -14,12 +14,11 @@
 
 <body id="home">
 
-    <nav class="navbar navbar-expand-sm p-5 fixed-top mx-auto mt-3 ">
+    <nav class="navbar navbar-expand-sm fixed-top mx-auto" id="navigation">
 
-        <img src="static/Logo.png" alt="Logo" class="navbar-brand rounded-circle" width="250px">
+        <img src="static/Logo.png" alt="Logo" class="navbar-brand rounded-circle" width="300px">
         <div class="container-fluid justify-content-end">
 
-            <img src="" alt="" class="navbar-brand">
 
             <ul class="navbar-nav">
 
@@ -43,49 +42,26 @@
     {% endblock %}
 
     <!-- Footer -->
-    <footer>
-        <!-- Section: Social media -->
-        <section class="p-5 mx-auto">
-            <div class="mx-auto ">
-                <!-- Content -->
-                <h3>
-                    YogaConnect+
-                </h3>
-                <p>
-                    Here you can use rows and columns to organize your footer content. Lorem ipsum
-                    dolor sit amet, consectetur adipisicing elit.
-                </p>
+    <footer class="w-100">
+        <div class="container-fluid justify-content-end row">
+            <div class="container-fluid col-sm-8 mt-0">
+                <img src="static/Logo.png" alt="Logo">
             </div>
-            <div>
-                <span>Connect with us on social networks:</span>
+            <div class=" container-fluid col-sm mt-5">
+                <dl>
+                    <dt>
+                        Contact Us
+                    </dt>
+                    <dd class="mt-2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti laudantium ad corrupti
+                        voluptatum consectetur repudiandae omnis consequatur quam! Similique.
+                    </dd>
+                </dl>
             </div>
-            <div>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a href="" class="me-4 text-reset">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-            </div>
-            <div>
-                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                <p>
-                    <i class="fas fa-envelope me-3"></i>
-                    ycplus@gmail.com
-                </p>
-                <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-            </div>
-
-        </section>
+        </div>
 
     </footer>
+    <script src="static/Skeleton.js"></script>
 
+</body>
 </html>

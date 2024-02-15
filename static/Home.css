@@ -1,5 +1,5 @@
 .carousel-item img {
-    height: 1000px !important;
+    height: 700px !important;
 }
 
 .carousel {
@@ -7,36 +7,20 @@
 }
 
 .content {
-    background-color: #F7FFF7;
-    color: #1A535C;
-    font-size: 25px;
-    margin-top: 1000px;
-    background-color: #F7FFF7;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.scroll .section {
-    width: 50%;
-    height: 300px;
-    align-items: center;
-    border: 2px solid;
-    align-items: space-between;
-    margin-left: 20px;
-}
-
-.section>img {
-    height: 50px;
-    width: 50px;
-}
-
-::-webkit-scrollbar {
-    -webkit-appearance: none;
+    margin-top: 600px;
+    background-color: #E0E4CC;
 }
 
 .heading {
-    font-size: xx-large;
-    justify-self: center;
-    align-self: center;
-    font-family: Georgia, 'Times New Roman', Times;
+    text-align: center;
+    font-size: 50px;
     color: #1A535C;
+}
+
+.boxes {
+    text-align: center;
+    border: 2px solid #1A535C;
+    border-radius: 30px;
+    width: 20%;
+    height: 80%;
 }

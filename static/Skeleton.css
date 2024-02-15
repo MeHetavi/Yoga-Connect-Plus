@@ -1,12 +1,32 @@
+:root {
+    --navbar_height: 80px;
+}
+
 .navbar {
     background-color: #0D1B2A;
-    height: 150px;
-    width: 90%;
-    border-radius: 300px;
+    height: var(--navbar_height);
     align-self: center;
+    transition: transform 0.5s;
 }
+
+
 
 .nav-item a {
     color: #E0E4CC;
-    font-size: 25px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer * {
+    background-color: #0D1B2A;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #E0E4CC;
+}
+
+.footer-elements {
+    display: inline;
+}
+
+.nav--hidden {
+    transform: translateY(calc(-1*var(--navbar_height)));
 }
