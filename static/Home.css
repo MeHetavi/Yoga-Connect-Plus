@@ -1,13 +1,26 @@
 .carousel-item img {
-    height: 1000px !important;
+    height: 700px !important;
 }
 
 .carousel {
     z-index: -1;
-    margin-top: 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+}
+
+.content {
+    margin-top: 600px;
+    background-color: #E0E4CC;
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+    color: #1A535C;
+}
+
+.boxes {
+    text-align: center;
+    border: 2px solid #1A535C;
+    border-radius: 30px;
+    width: 20%;
+    height: 80%;
 }
