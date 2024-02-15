@@ -1,11 +1,3 @@
-.carousel-item img {
-    height: 700px !important;
-}
-
-.carousel {
-    z-index: -1;
-}
-
 .heading {
     text-align: center;
     font-size: 50px;
@@ -13,6 +5,6 @@
 }
 
 .content {
-    margin-top: 600px;
+    margin-top: 80px;
     background-color: #E0E4CC;
 }

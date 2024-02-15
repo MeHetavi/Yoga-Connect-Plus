@@ -29,4 +29,8 @@ app = Flask(__name__)
 def test():
     return render_template("Home.html")
 
+@app.route('/explore')
+def explore():
+    return render_template('Explore.html')
+
 app.run(debug=True)

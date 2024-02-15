@@ -6,10 +6,15 @@
     background-color: #0D1B2A;
     height: var(--navbar_height);
     align-self: center;
-    transition: transform 0.5s;
+    transition: transform 0.3s;
+    width: 100%;
 }
 
+.style-offcanvas {
+    background-color: #0D1B2A;
+    color: #E0E4CC;
 
+}
 
 .nav-item a {
     color: #E0E4CC;
@@ -17,7 +22,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-footer * {
+footer {
+    width: 100%;
     background-color: #0D1B2A;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #E0E4CC;
@@ -29,4 +35,18 @@ footer * {
 
 .nav--hidden {
     transform: translateY(calc(-1*var(--navbar_height)));
+}
+
+body {
+    background-color: #E0E4CC;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.bar {
+    border: 2px solid white;
+    margin: 6px 0px;
+    width: 30px;
 }

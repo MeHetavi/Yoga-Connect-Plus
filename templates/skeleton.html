@@ -2,66 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-    <title>YogaConnect+</title>
-    <link href="static/Skeleton.css" rel="stylesheet" />
-    {%block head%}
-    {% endblock %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <title>YogaConnect+</title>
+  <link href="static/Skeleton.css" rel="stylesheet" />
+  {%block head%}
+  {% endblock %}
 </head>
 
 <body id="home">
 
-    <nav class="navbar navbar-expand-sm fixed-top mx-auto" id="navigation">
+  <nav class="navbar navbar-expand-sm fixed-top mx-auto" id="navigation">
+      <img src="static/Logo.png" alt="Logo" class="navbar-brand rounded-circle" width="300px">
 
-        <img src="static/Logo.png" alt="Logo" class="navbar-brand rounded-circle" width="300px">
-        <div class="container-fluid justify-content-end">
+    <div class="container-fluid justify-content-end">
+      <button class="btn navbar-toggle-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <div class="offcanvas offcanvas-end" id="demo">
 
+      <div class="offcanvas-header style-offcanvas" >
 
-            <ul class="navbar-nav">
+        <h1 class="offcanvas-title style-offcanvas">Heading</h1>
 
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="#" data-bs-toggle="#home">Home</a>
-                </li>
+        <button type="button style-offcanvas" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
 
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="#">Explore</a>
-                </li>
+      </div>
+      <div class="offcanvas-body style-offcanvas">
+        <ul class="navbar-nav">
 
-                <li class="nav-item p-3">
-                    <a class="nav-link" href="#">LogIn</a>
-                </li>
+          <li class="nav-item p-3">
+            <a class="nav-link" href="#" data-bs-toggle="#home">Home</a>
+          </li>
 
-            </ul>
-        </div>
-    </nav>
+          <li class="nav-item p-3">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
 
-    {%block body%}
-    {% endblock %}
+          <li class="nav-item p-3">
+            <a class="nav-link" href="#">LogIn</a>
+          </li>
 
-    <!-- Footer -->
-    <footer class="w-100">
-        <div class="container-fluid justify-content-end row">
-            <div class="container-fluid col-sm-8 mt-0">
-                <img src="static/Logo.png" alt="Logo">
-            </div>
-            <div class=" container-fluid col-sm mt-5">
-                <dl>
-                    <dt>
-                        Contact Us
-                    </dt>
-                    <dd class="mt-2">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti laudantium ad corrupti
-                        voluptatum consectetur repudiandae omnis consequatur quam! Similique.
-                    </dd>
-                </dl>
-            </div>
-        </div>
+        </ul>
 
-    </footer>
-    <script src="static/Skeleton.js"></script>
+      </div>
+    </div>
+    
+    </div>
+    
+  </nav>
+
+  <!-- <nav class="navbar navbar-expand-sm">
+
+  </nav> -->
+
+  {%block body%}
+  {% endblock %}
+
+  <!-- Footer -->
+  <footer class="w-100">
+    <div class="container-fluid justify-content-end row">
+      <div class="container-fluid col-sm-8 mt-0">
+        <img src="static/Logo.png" alt="Logo" width="200px">
+      </div>
+      <div class=" container-fluid col-sm mt-5">
+        <dl>
+          <dt>
+            Contact Us
+          </dt>
+          <dd class="mt-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam deleniti laudantium ad corrupti
+            voluptatum consectetur repudiandae omnis consequatur quam! Similique.
+          </dd>
+        </dl>
+      </div>
+    </div>
+
+  </footer>
+  <script src="static/Skeleton.js"></script>
 
 </body>
+
 </html>
