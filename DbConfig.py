@@ -1,20 +1,11 @@
-
 import psycopg2
 
-# Establish connection parameters
-host = 'localhost'
-database = 'YogaConnect+'
-user = 'postgres'
-password = 'hetu'
+conn=psycopg2.connect(database="YogaConnect+",host="localhost",user="postgres",password="tirth",port="5432")
+cur=conn.cursor()
 
-# Establish connection
-try:
-    connection = psycopg2.connect(
-        host=host,
-        database=database,
-        user=user,
-        password=password
-    )    
-    
-except psycopg2.Error as e:
-    ...
+cur.execute('''CREATE TABLE IF NOT EXISTS LOGIN (username VARCHAR(400) UNIQUE,email VARCHAR(400) PRIMARY KEY,password VARCHAR(11),gender VARCHAR(10),age INT,type VARCHAR(40))''')
+
+
+conn.commit()
+cur.close()
+conn.close()
