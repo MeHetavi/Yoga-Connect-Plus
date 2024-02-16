@@ -1,10 +1,10 @@
-from flask import Flask,render_template,request
+from Config import app, render_template, url_for,request
 import psycopg2
-app=Flask(__name__)
 
 def db_conn():
     conn=psycopg2.connect(database="student",host="localhost",user="postgres",password="tirth",port="5432")
     return conn
+
 @app.route("/")
 def home():
     return render_template("Home.html")
@@ -40,5 +40,9 @@ def signUp():
                 break
 
         return render_template("Home.html")  
+    
+@app.route('/explore')
+def expl():
+    return render_template('Explore.html')
 if __name__=="__main__":
     app.run(debug=True)
