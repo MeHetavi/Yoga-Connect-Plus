@@ -2,6 +2,15 @@
     --navbar_height: 80px;
 }
 
+* {
+    font-family: "Smooch Sans",
+        sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: large;
+
+}
+
 .navbar {
     background-color: #0D1B2A;
     height: var(--navbar_height);
@@ -18,14 +27,13 @@
 
 .nav-item a {
     color: #E0E4CC;
-    font-size: 16px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 footer {
     width: 100%;
     background-color: #0D1B2A;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: sans-serif;
+    font-style: italic;
     color: #E0E4CC;
 }
 

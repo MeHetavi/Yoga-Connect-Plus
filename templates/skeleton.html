@@ -11,6 +11,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
   <link href="static/Skeleton.css" rel="stylesheet" />
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap')
+</style>
   {%block head%}
   {% endblock %}
 </head>
@@ -18,10 +21,10 @@
 <body id="home">
 
   <nav class="navbar navbar-expand-md fixed-top mx-auto p-3" id="navigation">
-
     <div class="container-fluid style-offcanvas">
+      <img src="static/Logo.png" alt="Logo" class="navbar-brand " width="200px">
 
-      <button class="navbar-toggler style-offcanvas " data-bs-toggle="offcanvas"
+      <button class="navbar-toggler style-offcanvas ml-auto" data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" style="color:#0D1B2A !important;">
         <div class="bar"></div>
         <div class="bar"></div>
@@ -64,7 +67,6 @@
       </div>
 
     </div>
-
   </nav>
 
   {%block body%}
@@ -73,8 +75,8 @@
   <!-- Footer -->
   <footer class="w-100">
     <div class="container-fluid justify-content-end row">
-      <div class="container-fluid col-sm-8 mt-0">
-        <img src="static/Logo.png" alt="Logo" width="200px">
+      <div class="container-fluid col-sm-8 mt-3">
+        <img src="static/Full_Logo.jpg" alt="Logo" width="280px">
       </div>
       <div class=" container-fluid col-sm mt-5">
         <dl>
