@@ -9,10 +9,12 @@
 .heading {
     text-align: center;
     font-size: 50px;
-    color: #1A535C;
+    color: #333333;
 }
 
 .content {
     margin-top: 600px;
     background-color: #E0E4CC;
+    color: #333333;
+    font-size: 25px;
 }
