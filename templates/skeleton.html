@@ -49,16 +49,23 @@
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="Home.html" data-bs-toggle="#home">Home</a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="#">Explore</a>
             </li>
+            {%if user%}
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">LogIn</a>
-            </li>
+            {%else%}
+              <li class="nav-item">
+                <a class="nav-link" href="#">LogIn</a>
+              </li>
+            {%endif%}
+            
 
           </ul>
 
@@ -76,7 +83,7 @@
   <footer class="w-100">
     <div class="container-fluid justify-content-end row">
       <div class="container-fluid col-sm-8 mt-3">
-        <img src="static/Full_Logo.jpg" alt="Logo" width="280px">
+        <img src="static/Logo.jpg" alt="Logo" width="280px">
       </div>
       <div class=" container-fluid col-sm mt-5">
         <dl>
