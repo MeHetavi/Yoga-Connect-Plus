@@ -1,0 +1,33 @@
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: #0D1B2A;
+}
+
+* {
+    color: #E0E4CC;
+    font-size: small;
+    font-weight: bold;
+}
+
+a {
+    color: #E0E4CC;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color: blue;
+}
+
+.input-field {
+    /* width: 400px; */
+    background: #0D1B2A;
+    color: #E0E4CC;
+    border-color: black;
+
+}
+
+.signUp-box {
+    background-color: #132a42;
+}

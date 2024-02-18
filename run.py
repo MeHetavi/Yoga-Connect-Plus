@@ -1,5 +1,5 @@
 from Config import app, render_template, request
-import SignUp
+import Gate,Explore
 
 @app.route('/')
 def home():

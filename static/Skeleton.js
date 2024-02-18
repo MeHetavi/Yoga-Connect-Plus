@@ -13,3 +13,4 @@
         lastScroll = window.scrollY;
     })
 }
+

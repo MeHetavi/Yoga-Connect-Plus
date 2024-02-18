@@ -10,6 +10,14 @@
   <title>YogaConnect+</title>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
   <link href="static/Skeleton.css" rel="stylesheet" />
   <style>
 @import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap')
@@ -53,16 +61,27 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Explore</a>
+              <a class="nav-link" href="{{url_for('explore')}}">Explore</a>
             </li>
             {%if user%}
-              <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
-              </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                Profile
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-info" href="#">{{user.username}}</a></li>
+                <li><a class="dropdown-item" href="#">{{user.age}}</a></li>
+                <li><a class="dropdown-item" href="#">{{user.age}}</a></li>
+                <li><a class="dropdown-item" href="#">{{user.age}}</a></li>
+                <li><a class="dropdown-item" href="#">{{user.age}}, Hello</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
 
             {%else%}
               <li class="nav-item">
-                <a class="nav-link" href="#">LogIn</a>
+                <a class="nav-link" href="{{url_for('signUp') }}">SignUp</a>
               </li>
             {%endif%}
             
@@ -80,10 +99,10 @@
   {% endblock %}
 
   <!-- Footer -->
-  <footer class="w-100">
+  <footer class="w-100 bottom">
     <div class="container-fluid justify-content-end row">
       <div class="container-fluid col-sm-8 mt-3">
-        <img src="static/Logo.jpg" alt="Logo" width="280px">
+        <img src="static/Logo.png" alt="Logo" width="280px">
       </div>
       <div class=" container-fluid col-sm mt-5">
         <dl>
